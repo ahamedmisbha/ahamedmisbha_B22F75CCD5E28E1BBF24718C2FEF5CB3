@@ -1,8 +1,22 @@
-def factorial(n): # recursive solution
-   if (n==1 or n==0):
-      return 1
-   else:
-      return n * factorial(n - 1)
-# main
-num = 6
-print("Factorial of",num,"is", factorial(num))
+class player:
+
+  def play(self):
+    print("The player is playing cricket")
+
+
+class batsman(player):
+
+  def play(self):
+    print("the batsman is batting ")
+
+
+class bowler(player):
+
+  def play(self):
+    print("the bowler is bowling")
+
+
+batsman = batsman()
+bowler = bowler()
+batsman.play()
+bowler.play()
